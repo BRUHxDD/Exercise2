@@ -31,5 +31,21 @@ namespace Exercise2
                 attar[i] = Int32.Parse(s1);
             }
         }
+        public void SelectionSortArray()
+        {
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int tf = i - 1; tf >= 0; tf--)
+                {
+                    if (Attar[tf] > attar[tf + 1])
+                    {
+                        int temp;
+                        temp = attar[tf];
+                        attar[tf] = attar[tf + 1];
+                        attar[tf + 1] = temp;
+                    }
+                }
+            }
+        }
     }
 }
