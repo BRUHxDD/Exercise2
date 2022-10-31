@@ -82,5 +82,10 @@ namespace Exercise2
             }
             while ((ch == 'y') || (ch == 'Y'));
         }
+        static void Main(string[] args)
+        {
+            Program myList = new Program();
+            int pilihanmenu;
+        }
     }
 }
