@@ -47,5 +47,31 @@ namespace Exercise2
                 }
             }
         }
+        public void BinarySearch()
+        {
+            char ch;
+            do
+            {
+                Console.Write("\nMasukkan elemen array: ");
+                int item = Convert.ToInt32(Console.ReadLine());
+
+                int lowerbound = 0;
+                int upperbound = n - 1;
+
+                int mid = (lowerbound + upperbound) / 2;
+                int ctr = 1;
+
+                while ((item != attar[mid]) && (lowerbound <= upperbound))
+                {
+                    if (item > attar[mid])
+                        lowerbound = mid + 1;
+                    else
+                        upperbound = mid - 1;
+
+                    mid = (lowerbound + upperbound) / 2;
+                    ctr++
+                }
+            }
+        }
     }
 }
