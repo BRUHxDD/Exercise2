@@ -121,7 +121,10 @@ namespace Exercise2
                         Console.WriteLine("error");
                         break;
                 }
+                Console.WriteLine("\n\nTekan enter untuk exit.");
+                Console.ReadLine();
             }
+            while (pilihanmenu != 3);
         }
     }
 }
