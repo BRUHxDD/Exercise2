@@ -97,6 +97,16 @@ namespace Exercise2
                 pilihanmenu = Convert.ToInt32(Console.ReadLine());
 
                 switch (pilihanmenu)
+                {
+                    case 1:
+                        Console.WriteLine("");
+                        Console.WriteLine("......................");
+                        Console.WriteLine("Selection Sort Search");
+                        Console.WriteLine("......................");
+                        myList.input();
+                        myList.SelectionSortArray();
+                        break;
+                }
             }
         }
     }
