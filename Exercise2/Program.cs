@@ -114,6 +114,12 @@ namespace Exercise2
                         myList.input();
                         myList.BinarySearch();
                         break;
+                    case 3:
+                        Console.WriteLine("exit.");
+                        break;
+                    default:
+                        Console.WriteLine("error");
+                        break;
                 }
             }
         }
